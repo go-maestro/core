@@ -1,0 +1,7 @@
+---
+name: DATALAKE
+steps:
+- name: step1
+  type: KUBERNETES
+  files:
+  - "../kubernetes/secret.yaml"

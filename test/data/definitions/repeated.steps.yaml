@@ -1,0 +1,20 @@
+---
+name: DATALAKE
+version: "1.0"
+steps:
+- name: step1
+  type: KUBERNETES
+  files:
+  - "path/to/file-1.yaml"
+  - "path/to/file-2.yaml"
+- name: step1
+  type: KUBERNETES
+  files:
+  - "path/to/file-3.yaml"
+  - "path/to/file-4.yaml"
+- name: step2
+  type: KUBERNETES
+  files:
+  - "path/to/file-5.yaml"
+  depends_on:
+  - step1

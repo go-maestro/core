@@ -1,0 +1,7 @@
+---
+name: DATALAKE
+steps:
+- name: step1
+  type: KUBERNETES
+  files:
+  - "../kubernetes/i_dont_exist.yaml"
